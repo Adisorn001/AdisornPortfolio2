@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adisorn Dankeaw</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#cover" class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Portfolio</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#cover" class="nav-link active" data-section="cover">
+                        <i class="fas fa-home"></i> หน้าแรก
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <i class="fas fa-user"></i> เกี่ยวกับ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" data-section="portfolio">
+                        <i class="fas fa-briefcase"></i> ผลงาน
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope"></i> ติดต่อ
+                    </a>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== COVER / HERO SECTION ========== -->
+    <section class="cover-section" id="cover">
+        <div class="cover-particles" id="particles"></div>
+        <div class="cover-content">
+            <!-- Logos Row -->
+            <div class="logos-row fade-in">
+                <!-- School Logo -->
+                <div class="logo-item">
+                    <div class="university-logo">
+                        <img src="assets/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ2.png" alt="ตราโรงเรียนเทศบาล 3 วัดชัยมงคล"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-placeholder" style="display:none;">
+                            <i class="fas fa-school"></i>
+                            <span>ทศ.3</span>
+                        </div>
+                    </div>
+                    <span class="logo-label">โรงเรียนเทศบาล 3 วัดชัยมงคล</span>
+                </div>
+
+                <!-- Divider -->
+                <div class="logos-divider"></div>
+
+                <!-- Thammasat Logo -->
+                <div class="logo-item">
+                    <div class="university-logo">
+                        <img src="assets/Emblem_of_Thammasat_University.svg.webp" alt="ตราธรรมศาสตร์"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-placeholder" style="display:none;">
+                            <i class="fas fa-university"></i>
+                            <span>มธ.</span>
+                        </div>
+                    </div>
+                    <span class="logo-label">มหาวิทยาลัยธรรมศาสตร์</span>
+                </div>
+            </div>
+
+            <!-- Personal Photo -->
+            <div class="profile-photo fade-in">
+                <div class="photo-frame">
+                    <img src="assets/2345.png" alt="รูปภาพ อดิศร ด่านแก้ว"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display:none;">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="photo-ring"></div>
+            </div>
+
+            <!-- Portfolio Label -->
+            <p class="cover-portfolio-label fade-in">
+                <i class="fas fa-folder-open"></i> Portfolio
+            </p>
+
+            <!-- Full Name -->
+            <h1 class="cover-name fade-in">
+                <span class="name-th">อดิศร ด่านแก้ว</span>
+                <span class="name-en">Adisorn Dankeaw</span>
+            </h1>
+
+            <!-- Info Badges -->
+            <div class="cover-info-badges fade-in">
+                <div class="cover-badge">
+                    <i class="fas fa-university"></i>
+                    <span>มหาวิทยาลัยธรรมศาสตร์ · Thammasat University</span>
+                </div>
+                <div class="cover-badge">
+                    <i class="fas fa-cogs"></i>
+                    <span>คณะวิศวกรรมศาสตร์ · Faculty of Engineering</span>
+                </div>
+                <div class="cover-badge cover-badge--accent">
+                    <i class="fas fa-microchip"></i>
+                    <span>สาขาวิศวกรรมคอมพิวเตอร์ · Computer Engineering</span>
+                </div>
+            </div>
+
+            <a href="#about" class="cover-cta fade-in">
+                <span>เรียนรู้เพิ่มเติม</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT / INTRODUCTION SECTION ========== -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">
+                    <i class="fas fa-address-card"></i>
+                    คำนำ / แนะนำตัว
+                </h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <h3>สวัสดีครับ</h3>
+                    <p>
+                        ผมชื่อ <strong>อดิศร ด่านแก้ว</strong> ชื่อเล่น ฟิล์ม 
+                        ปัจจุบันอายุ 17 ปี เป็นนักเรียนแผนการเรียนศิลป์ - ทั่วไป
+                        ที่โรงเรียนเทศบาล 3 วัดชัยมงคล
+                    </p>
+                    <p>
+                        ผมมีความสนใจและความสามารถด้านคอมพิวเตอร์
+                        ทั้งในเรื่องของการใช้งาน การแก้ไขปัญหาซอฟต์แวร์
+                        รวมถึงมีทักษะการเขียนโปรแกรมเบื้องต้น
+                        และมีความสามารถในการคิดเชิงตรรกะ (Logical Thinking)
+                    </p>
+                    <p>
+                        แฟ้มสะสมผลงาน (Portfolio) นี้จัดทำขึ้นเพื่อรวบรวมผลงาน
+                        ประสบการณ์และทักษะต่างๆ ที่ได้เรียนรู้
+                        เพื่อนำเสนอต่อคุณครูและผู้ที่สนใจ
+                        หวังว่าจะเป็นประโยชน์และสะท้อนถึงความมุ่งมั่นในการพัฒนาตนเอง
+                    </p>
+                </div>
+
+                <div class="about-info fade-in">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-user"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">ชื่อ-นามสกุล</span>
+                            <span class="info-value">อดิศร ด่านแก้ว</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-birthday-cake"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">วันเกิด</span>
+                            <span class="info-value">8 มีนาคม 2552</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">อายุ</span>
+                            <span class="info-value">17 ปี</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-school"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">สถานศึกษา</span>
+                            <span class="info-value">โรงเรียนเทศบาล 3 วัดชัยมงคล</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">แผนการเรียน</span>
+                            <span class="info-value">ศิลป์-ทั่วไป</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-pray"></i></div>
+                        <div class="info-details">
+                            <span class="info-label">ศาสนา</span>
+                            <span class="info-value">พุทธ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education-section fade-in">
+                <h3 class="education-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    ประวัติการศึกษา
+                </h3>
+                <div class="education-timeline">
+                    <div class="edu-item fade-in">
+                        <div class="edu-icon"><i class="fas fa-school"></i></div>
+                        <div class="edu-connector"></div>
+                        <div class="edu-card">
+                            <span class="edu-level">ประถมศึกษา (ป.6)</span>
+                            <h4 class="edu-school">โรงเรียนวัดราชปักษี</h4>
+                            <p class="edu-school-en">Wat Ratchapaksi School</p>
+                        </div>
+                    </div>
+                    <div class="edu-item fade-in">
+                        <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="edu-connector"></div>
+                        <div class="edu-card">
+                            <span class="edu-level">มัธยมศึกษาตอนต้น (ม.3)</span>
+                            <h4 class="edu-school">โรงเรียนเทศบาล 3 วัดชัยมงคล</h4>
+                            <p class="edu-school-en">Municipal School 3 (Wat Chai Mongkhon)</p>
+                        </div>
+                    </div>
+                    <div class="edu-item edu-item--last fade-in">
+                        <div class="edu-icon edu-icon--active"><i class="fas fa-university"></i></div>
+                        <div class="edu-card">
+                            <span class="edu-level edu-level--current">มัธยมศึกษาตอนปลาย (ม.6) <span class="edu-badge">ปัจจุบัน</span></span>
+                            <h4 class="edu-school">โรงเรียนเทศบาล 3 วัดชัยมงคล</h4>
+                            <p class="edu-school-en">Municipal School 3 (Wat Chai Mongkhon) · คาดว่าจะสำเร็จการศึกษา 2570</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section fade-in">
+                <h3 class="skills-title">
+                    <i class="fas fa-cogs"></i>
+                    ทักษะ / ความสามารถ
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">ความรู้ด้านคอมพิวเตอร์</span>
+                            <p class="skill-desc">มีความเข้าใจในการใช้งานคอมพิวเตอร์และซอฟต์แวร์ต่าง ๆ</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">ทักษะการคิดเชิงตรรกะ</span>
+                            <p class="skill-desc">สามารถวิเคราะห์และแก้ปัญหาอย่างเป็นระบบ</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">แก้ไขปัญหาคอมพิวเตอร์</span>
+                            <p class="skill-desc">สามารถแก้ไขปัญหาคอมพิวเตอร์ด้านซอฟต์แวร์เบื้องต้นได้</p>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-info">
+                            <span class="skill-name">การเขียนโปรแกรมเบื้องต้น</span>
+                            <p class="skill-desc">มีทักษะพื้นฐานในการเขียนโปรแกรมและพัฒนาเว็บไซต์</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO / CERTIFICATES SECTION ========== -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">
+                    <i class="fas fa-certificate"></i>
+                    ผลงาน / ประกาศนียบัตร
+                </h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Card 1 -->
+                <div class="portfolio-card fade-in">
+                    <div class="card-image">
+                        <img src="assets/3015200103-35_page-0001.jpg" alt="Certificate 1"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="card-image-placeholder" style="display:none;">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-btn" onclick="openModal(0)">
+                                <i class="fas fa-search-plus"></i> ดูรายละเอียด
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">การออกแบบสิ่งของเครื่องใช้ ระดับชั้น ม.4 - ม.6</h3>
+                        <p class="card-desc">รายละเอียดผลงาน</p>
+                        <div class="card-tags">
+                            <span class="tag">18 ธันวาคม 2567</span>
+                            <span class="tag">18 December2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="portfolio-card fade-in">
+                    <div class="card-image">
+                        <img src="assets/web68_cerby_compet_99_school_183-1_page-0001.jpg" alt="Certificate 2"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="card-image-placeholder" style="display:none;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-btn" onclick="openModal(1)">
+                                <i class="fas fa-search-plus"></i> ดูรายละเอียด
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">การแข่งขันทักษะคอมพิวเตอร์ ระดับชั้น ม.4 - ม.6</h3>
+                        <p class="card-desc">รายละเอียดผลงาน</p>
+                        <div class="card-tags">
+                            <span class="tag">3 กรกฎาคม 2568</span>
+                            <span class="tag">3 July 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="portfolio-card fade-in">
+                    <div class="card-image">
+                        <img src="assets/certificate-school_competition-151435-1_page-0001.jpg" alt="Certificate 3"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="card-image-placeholder" style="display:none;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-btn" onclick="openModal(2)">
+                                <i class="fas fa-search-plus"></i> ดูรายละเอียด
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">การแข่งขันทักษะคอมพิวเตอร์ ระดับชั้น ม.4 - ม.6</h3>
+                        <p class="card-desc">รายละเอียดผลงาน</p>
+                        <div class="card-tags">
+                            <span class="tag">22 กรกฎาคม 2569</span>
+                            <span class="tag">22 July 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="portfolio-card fade-in">
+                    <div class="card-image">
+                        <img src="assets/นายอดิศร ด่านแก้ว.jpg" alt="Certificate 4"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="card-image-placeholder" style="display:none;">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-btn" onclick="openModal(3)">
+                                <i class="fas fa-search-plus"></i> ดูรายละเอียด
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">ตอบคำถามวันวิทยาศาสตร์แห่งชาติ</h3>
+                        <p class="card-desc">รายละเอียดผลงาน</p>
+                        <div class="card-tags">
+                            <span class="tag">8 กันยายน 2569</span>
+                            <span class="tag">8 September 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for viewing certificates -->
+        <div class="modal-overlay" id="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img id="modal-image" src="" alt="Certificate Full View">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT / FOOTER SECTION ========== -->
+    <footer class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title light">
+                    <i class="fas fa-paper-plane"></i>
+                    ติดต่อ
+                </h2>
+                <div class="title-line light"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon contact-icon--email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>adisorndankeawwork@gmail.com</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon contact-icon--phone">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>โทรศัพท์</h3>
+                    <p>093-221-0367</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon contact-icon--line">
+                        <i class="fab fa-line"></i>
+                    </div>
+                    <h3>LINE ID</h3>
+                    <p>@adisorn</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon contact-icon--facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>อดิศร ด่านแก้ว</p>
+                </div>
+                <div class="contact-card fade-in">
+                    <div class="contact-icon contact-icon--youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>@adisorn_dankeaw</p>
+                </div>
+            </div>
+
+            <div class="social-links fade-in">
+                <a href="https://www.facebook.com/xdisr.dan.k.w" class="social-btn social-btn--facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/adisorn_dankeaw/" class="social-btn social-btn--instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@AdisornDankeaw" class="social-btn social-btn--youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Adisorn Dankaeo Portfolio. All Rights Reserved.</p>
+            <p>จัดทำเพื่อการศึกษา | โรงเรียนเทศบาล 3 วัดชัยมงคล</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="javascript/navbar.js"></script>
+    <script src="javascript/effects.js"></script>
+    <script src="javascript/portfolio.js"></script>
+
+</body>
+</html>
